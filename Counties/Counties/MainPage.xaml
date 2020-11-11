@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Counties.MainPage"
+             Title="Counties">
+
+    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Spacing="0">
+
+        <StackLayout Orientation="Horizontal">
+            <Frame
+                BackgroundColor="Black"
+                CornerRadius="10"
+                Margin="5"
+                >
+                <Picker VerticalOptions="EndAndExpand"
+                    HorizontalOptions="CenterAndExpand"
+                    WidthRequest="115"
+                    HeightRequest="100"
+                    x:Name="cnts"
+                    SelectedIndex="1"
+                    PropertyChanged="PropertyChanged"
+                    Margin="5"
+                    Title="Counties"
+                    TitleColor="AntiqueWhite"
+                    TextColor="AntiqueWhite"
+                    BackgroundColor="Black"
+                    />
+            </Frame>
+
+            <Frame
+                BackgroundColor="Black"
+                CornerRadius="10"
+                Margin="5"
+                >
+                <Picker VerticalOptions="EndAndExpand" 
+                    HorizontalOptions="CenterAndExpand"
+                    WidthRequest="115"
+                    HeightRequest="100"
+                    x:Name="cpls"
+                    SelectedIndex="1"
+                    PropertyChanged="PropertyChanged"
+                    Margin="5"
+                    Title="Capital Cities"
+                    TitleColor="AntiqueWhite"
+                    TextColor="AntiqueWhite"
+                    BackgroundColor="Black"
+                    />
+            </Frame>
+
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+            <Frame
+                BackgroundColor="Black"
+                CornerRadius="10"
+                Margin="5"
+                >
+                <Image VerticalOptions="EndAndExpand"
+                   HorizontalOptions="CenterAndExpand"
+                   WidthRequest="115"
+                    HeightRequest="100"
+                   x:Name="img"
+                   Margin="5"
+                   BackgroundColor="Black"
+                   />
+            </Frame>
+
+            <Frame
+                BackgroundColor="Black"
+                CornerRadius="10"
+                Margin="5"
+                >
+                <Entry VerticalOptions="EndAndExpand" 
+                   HorizontalOptions="CenterAndExpand"
+                   WidthRequest="115"
+                   HeightRequest="100"
+                   x:Name="ent"
+                   IsEnabled="False"
+                   Margin="5"
+                   TextColor="AntiqueWhite"
+                   PlaceholderColor="AntiqueWhite"
+                   BackgroundColor="Black"
+                   />
+            </Frame>
+        </StackLayout>
+
+    </StackLayout>
+
+</ContentPage>
