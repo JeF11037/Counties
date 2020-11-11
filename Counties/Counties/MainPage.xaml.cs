@@ -53,5 +53,20 @@ namespace Counties
             Picker pick = (Picker)sender;
             ChangeTheContent(pick.SelectedIndex);
         }
+
+        private void ent_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            for (int tick = 0; tick < DICT_counties.Count-1; tick++)
+            {
+                if (ent.Text.ToLower() == DICT_counties.Values.ElementAt(tick).ToLower())
+                {
+                    ChangeTheContent(tick);
+                }
+                if (ent.Text.ToLower() == DICT_counties.Keys.ElementAt(tick).ToLower())
+                {
+                    ChangeTheContent(tick);
+                }
+            }
+        }
     }
 }
