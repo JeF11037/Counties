@@ -58,11 +58,7 @@ namespace Counties
         {
             for (int tick = 0; tick < DICT_counties.Count-1; tick++)
             {
-                if (ent.Text.ToLower() == DICT_counties.Values.ElementAt(tick).ToLower())
-                {
-                    ChangeTheContent(tick);
-                }
-                if (ent.Text.ToLower() == DICT_counties.Keys.ElementAt(tick).ToLower())
+                if (ent.Text.ToLower() == DICT_counties.Values.ElementAt(tick).ToLower() || ent.Text.ToLower() == DICT_counties.Keys.ElementAt(tick).ToLower())
                 {
                     ChangeTheContent(tick);
                 }

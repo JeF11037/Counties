@@ -80,6 +80,7 @@
                    TextColor="AntiqueWhite"
                    PlaceholderColor="AntiqueWhite"
                    BackgroundColor="Black"
+                   ClearButtonVisibility="WhileEditing"
                    />
             </Frame>
         </StackLayout>
